@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-A057F (a05s)
+# Android device tree for samsung SM-A057F (a05s) A057FXXS4CXF1
 
 # Clone
     git clone https://github.com/MrFluffyOven/android_device_samsung_a05s.git -b twrp-12.1 device/samsung/a05s
