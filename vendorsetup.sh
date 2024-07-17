@@ -67,12 +67,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 # Display Settings
     export OF_HIDE_NOTCH=1
     export OF_CLOCK_POS=1
-    export OF_ALLOW_DISABLE_NAVBAR=1
+    export OF_ALLOW_DISABLE_NAVBAR=0
     export OF_USE_GREEN_LED=0
     export OF_SCREEN_H=2400
 
 # A/B-Related
-    export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+    export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=0
     export FOX_VIRTUAL_AB_DEVICE=0
     export OF_VANILLA_BUILD=0
   
