@@ -159,8 +159,10 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TW_MAX_BRIGHTNESS := 200
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 TW_DEVICE_VERSION := MrFluffyOven_3_S4_Crypton
+
+# Recovery Modules
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/recovery/root/lib/modules/modules.load.recovery))
 
 # Logging
 TARGET_USES_LOGD := true
